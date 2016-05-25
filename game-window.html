@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Legend of Zelda: El juego de preguntas | Juego</title>
+
+        <link rel="stylesheet" href='./css/bootstrap.min.css'>
+        <link rel="stylesheet" href='./css/app.css'>
+    </head>
+    <body id="game-window">
+        <section id="question-container">
+            <div class="container-fluid">
+                <div class="time-container row">
+                    <span id="time-span">
+
+                    </span>
+                </div>
+                <div class="question-container-container row">
+                    <div class="col-xs-12 frame-land question-container">
+                        <span id="question-span">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="answers-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id='answer-a' class="answer answer-a col-xs-6">
+                        <div class="symbol-container">
+                            <span id="answer-a-span">k</span>
+                        </div>
+                        <div class="answer-container">
+                            <span id='answer-a-span-content'>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id='answer-b' class="answer answer-b col-xs-6">
+                        <div class="symbol-container">
+                            <span id="answer-b-span">l</span>
+                        </div>
+                        <div class="answer-container">
+                            <span id='answer-b-span-content'>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id='answer-c' class="answer answer-c col-xs-6">
+                        <div class="symbol-container">
+                            <span id="answer-c-span">m</span>
+                        </div>
+                        <div class="answer-container">
+                            <span id='answer-c-span-content'>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id='answer-d' class="answer answer-d col-xs-6">
+                        <div class="symbol-container">
+                           <span id="answer-d-span">n</span>
+                        </div>
+                        <div class="answer-container">
+                            <span id='answer-d-span-content'>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <audio id="question-sound" src="./sound/question.wav"></audio>
+        <audio id="fail-sound" src="./sound/fail.wav"></audio>
+        <audio id="correct-sound" src="./sound/correct.wav"></audio>
+
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/game-window.js"></script>
+    </body>
+</html>

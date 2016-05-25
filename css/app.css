@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Triforce';
+    src: url('../fonts/Triforce.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Charlemagne';
+    src: url('../fonts/Charlemagne.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'HylianSymbols';
+    src: url('../fonts/HylianSymbols.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft.ttf')  format('truetype');
+}
+
+.frame-land {
+    background-color: #887848;
+    border: 16px solid transparent;
+    border-image-source: url("../img/frame-land.png");
+    border-image-slice: 16;
+    border-image-repeat: round;
+    color: black;
+    padding: 20px;
+    }
+
+
+section#welcome{
+    background-image: url('../img/bg-grass.png');
+    padding: 40px 0;
+}
+    .logo{
+        margin-left: 106px;
+    }
+        .title-head{
+            font-family: Charlemagne;
+            font-size: 8px;
+            color: #E5C100;
+            display: block;
+            margin-bottom: -30px;
+            margin-left: -106px;
+            text-shadow: 1px -1px #494b4b;
+            }
+        .title-body{
+            font-family: Triforce;
+            font-size: 75px;
+            color: brown;
+            text-shadow: 1px -1px #494b4b;
+            margin-right: 118px;
+            }
+    .title-feet{
+        font-family: Charlemagne;
+        font-size: 20px;
+        color: #E5C100;
+        display: block;
+        margin-bottom: -32px;
+        text-shadow: 1px -1px #494b4b;
+        padding-bottom: 40px;
+      }
+
+section#control-panel{
+    padding: 40px 0;
+    background: seagreen;
+    background-image: url('../img/bg-grass.png');
+    }
+
+
+section#standings{
+    padding: 40px 0;
+    background: seagreen;
+    background-image: url('../img/bg-grass.png');
+    }
+
+section#footer{
+    background-image: url('../img/bg-footer.png');
+    height: 286px;
+    margin-top: -99px;
+    background-position: center;
+    background-repeat: no-repeat
+    }
+
+
+/*********/
+body#game-window{
+
+    }
+    section#question-container{
+        height: 50vh;
+        padding: 0;
+        background: seagreen;
+        background-image: url('../img/bg-grass.png');
+        }
+        section#question-container .container-fluid{
+            height: 100%;
+            }
+            .row.time-container{
+                height: 30%;
+                }
+            .row.question-container-container{
+                height: 70%;
+                margin: 0px 50px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                }
+                section#question-container .row:first-child{
+                    padding: 20px;
+                  }
+                .question-container{
+                    font-family: Minecraft;
+                    font-size: 20px;
+                     }
+    section#answers-container{
+        height: 50vh;
+        background: lightpink;
+        }
+        section#answers-container .row{
+            height: 100%;
+            }
+            section#answers-container .container-fluid{
+                height: 50%;
+                }
+                .answer{
+                    height: 100%;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                    padding: 0;
+                    display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+                    }
+                    .symbol-container{
+                        font-family: HylianSymbols;
+                        width: 50px;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        height: 100%;
+                        font-size: 40px;
+                        }
+                    .answer-container{
+                        font-family: Minecraft;
+                        width: calc(100% - 50px);
+                        overflow: hidden;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        padding: 15px;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        }
+                    .answer-c{
+                        background: #e74c3c;
+                        }
+                        .answer-c:hover{
+                            background: #c0392b;
+                            }
+                    .answer-b{
+                        background: #3498db;
+                        }
+                        .answer-b:hover{
+                            background: #2980b9;
+                        }
+                    .answer-a{
+                        background: #f1c40f;
+                        }
+                        .answer-a:hover{
+                            background: #f39c12;
+                        }
+                    .answer-d{
+                        background: #2ecc71;
+                        }
+                        .answer-d:hover{
+                            background: #27ae60;
+                        }
